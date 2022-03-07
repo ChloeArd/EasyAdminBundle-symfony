@@ -26,7 +26,7 @@
 
         {% if is_granted("ROLE_MODERATOR") %}
             <p>Je suis modérateur</p>
-        {%  else if is_granted("ROLE_ADMIN") %}
+        {%  elseif is_granted("ROLE_ADMIN") %}
             <p>Je suis administrateur</p>
         {% else %}
             <p>Je suis un utilisateur</p>
