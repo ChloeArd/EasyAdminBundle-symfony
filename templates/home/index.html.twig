@@ -28,7 +28,7 @@
             <p>Je suis modérateur</p>
         {%  elseif is_granted("ROLE_ADMIN") %}
             <p>Je suis administrateur</p>
-        {% else %}
+        {% elseif is_granted("ROLE_USER") %}
             <p>Je suis un utilisateur</p>
         {% endif %}
     </main>
